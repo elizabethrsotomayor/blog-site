@@ -1,6 +1,6 @@
-@import "assets/css/mobstyle.css" screen and (max-width: 23rem);
-@import "assets/css/tablet-styles.css" screen and (max-width: 51rem);
-@import "assets/css/post-styles.css";
+@import "post-styles.css";
+@import "assets\css\mobstyle.css" screen and (max-width: 23rem);
+@import "assets\css\tablet-styles.css" screen and (max-width: 51rem);
 
 *,
 *::before,
@@ -44,109 +44,110 @@ h6 {
 /******************************************************************/
 /* GENERAL STYLES */
 /******************************************************************/
-body {
-    font-family: "Playfair Display";
-}
 
-header {
-    display: flex;
-    background-color: #fff;
-}
-
-main {
-    background-color: #DCA47C;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-ul {
-    list-style-type: none;
-    text-transform: uppercase;
-}
-
-a {
-    text-decoration: none;
-}
-
-.navbar {
-    display: flex;
-    gap: 3rem;
-}
-
-.navbar-container {
-    display: flex;
-    align-items: center;
-}
-
-.nav-link {
-    letter-spacing: 0.3rem;
-    font-weight: 600;
-    color: #698474;
-}
-
-.logo {
-    margin-left: auto;
-}
-
-.card {
-    display: flex;
-    background-color: #FFD3B6;
-    width: 70vw;
-    margin-top: 2.5rem;
-    border-radius: 1.5rem;
-}
-
-.post-title {
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 1rem;
-    letter-spacing: 0.15rem;
-}
-
-.post-desc {
-    padding: 2rem;
-    color: #698474;
-    letter-spacing: 0.03rem;
-}
-
-.underline {
-    text-decoration: underline;
-}
-
-.post-link {
-    background-color: #698474;
-    color: #FCF8F3;
-    padding: 1rem 3.5rem;
-    display: inline-block;
-    margin-top: 1.5rem;
-    border-radius: 1.5rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.25rem;
-}
-
-.link-container{
-    text-align: center;
-}
-
-.footer {
-    text-align: center;
-    background-color: #DCA47C;
-    height: 3rem;
-    color: #FFD3B6;
-    padding-top: 1.5rem;
-}
-
-.footer-link {
-    color: #698474;
-}
 
 /*******************************************************/
 /* DESKTOP STYLES */
 /*******************************************************/
 
 @media screen and (min-width: 50rem){
+    body {
+            font-family: "Playfair Display";
+        }
+    
+        header {
+            display: flex;
+            background-color: #fff;
+        }
+    
+        main {
+            background-color: #DCA47C;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        ul {
+            list-style-type: none;
+            text-transform: uppercase;
+        }
+    
+        a {
+            text-decoration: none;
+        }
+    
+        .navbar {
+            display: flex;
+            gap: 3rem;
+        }
+    
+        .navbar-container {
+            display: flex;
+            align-items: center;
+        }
+    
+        .nav-link {
+            letter-spacing: 0.3rem;
+            font-weight: 600;
+            color: #698474;
+        }
+    
+        .logo {
+            margin-left: auto;
+        }
+    
+        .card {
+            display: flex;
+            background-color: #FFD3B6;
+            width: 70vw;
+            margin-top: 2.5rem;
+            border-radius: 1.5rem;
+        }
+    
+        .post-title {
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 1rem;
+            letter-spacing: 0.15rem;
+        }
+    
+        .post-desc {
+            padding: 2rem;
+            color: #698474;
+            letter-spacing: 0.03rem;
+        }
+    
+        .underline {
+            text-decoration: underline;
+        }
+    
+        .post-link {
+            background-color: #698474;
+            color: #FCF8F3;
+            padding: 1rem 3.5rem;
+            display: inline-block;
+            margin-top: 1.5rem;
+            border-radius: 1.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.25rem;
+        }
+    
+        .link-container {
+            text-align: center;
+        }
+    
+        .footer {
+            text-align: center;
+            background-color: #DCA47C;
+            height: 6rem;
+            color: #FFD3B6;
+            padding-top: 1.5rem;
+        }
+    
+        .footer-link {
+            color: #698474;
+        }
 
     header {
         height: 30vh;

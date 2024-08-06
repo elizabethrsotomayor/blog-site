@@ -1,5 +1,5 @@
+@import "mobstyle.css" screen and (max-width: 25rem);
 @import "post-styles.css";
-@import "assets\css\mobstyle.css" screen and (max-width: 23rem);
 @import "assets\css\tablet-styles.css" screen and (max-width: 51rem);
 
 *,
@@ -44,15 +44,70 @@ h6 {
 /******************************************************************/
 /* GENERAL STYLES */
 /******************************************************************/
+body {
+    font-family: "Playfair Display";
+}
 
+header {
+    display: flex;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card {
+    display: flex;
+    background-color: #FFD3B6;
+    border-radius: 1.5rem;
+}
+
+.post-desc {
+    padding: 2rem;
+    color: #698474;
+    letter-spacing: 0.03rem;
+}
+
+main, .footer {
+    background-color: #DCA47C;
+}
+
+.footer {
+    color: #698474
+}
+.footer-link {
+    color: #698474;
+}
+
+.post-link {
+    background-color: #698474;
+    color: #FCF8F3;
+    padding: 1rem 3.5rem;
+    display: inline-block;
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+}
+
+.link-container {
+    text-align: center;
+}
 
 /*******************************************************/
 /* DESKTOP STYLES */
 /*******************************************************/
 
 @media screen and (min-width: 50rem){
-    body {
-            font-family: "Playfair Display";
+
+        .hamburger, .close {
+            display: none;
+        }
+
+        .logo {
+            margin-left: auto;
         }
     
         header {
@@ -61,7 +116,6 @@ h6 {
         }
     
         main {
-            background-color: #DCA47C;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -70,10 +124,6 @@ h6 {
         ul {
             list-style-type: none;
             text-transform: uppercase;
-        }
-    
-        a {
-            text-decoration: none;
         }
     
         .navbar {
@@ -92,18 +142,6 @@ h6 {
             color: #698474;
         }
     
-        .logo {
-            margin-left: auto;
-        }
-    
-        .card {
-            display: flex;
-            background-color: #FFD3B6;
-            width: 70vw;
-            margin-top: 2.5rem;
-            border-radius: 1.5rem;
-        }
-    
         .post-title {
             text-transform: uppercase;
             text-align: center;
@@ -111,46 +149,27 @@ h6 {
             letter-spacing: 0.15rem;
         }
     
-        .post-desc {
-            padding: 2rem;
-            color: #698474;
-            letter-spacing: 0.03rem;
-        }
-    
         .underline {
             text-decoration: underline;
         }
     
-        .post-link {
-            background-color: #698474;
-            color: #FCF8F3;
-            padding: 1rem 3.5rem;
-            display: inline-block;
-            margin-top: 1.5rem;
-            border-radius: 1.5rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.25rem;
-        }
+        
     
-        .link-container {
-            text-align: center;
-        }
-    
-        .footer {
-            text-align: center;
-            background-color: #DCA47C;
-            height: 6rem;
-            color: #FFD3B6;
-            padding-top: 1.5rem;
-        }
-    
-        .footer-link {
-            color: #698474;
-        }
+    .footer {
+        text-align: center;
+        background-color: #DCA47C;
+        height: 6rem;
+        color: #FFD3B6;
+        padding-top: 1.5rem;
+    }
 
     header {
         height: 30vh;
+    }
+
+    .card {
+        width: 70vw;
+        margin-top: 2.5rem;
     }
 
     .navbar-container {

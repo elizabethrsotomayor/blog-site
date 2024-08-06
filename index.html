@@ -5,24 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Page</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header role="banner">
         <h1 aria-label="Blog Page"></h1>
         <nav class="navbar-container">
-            <ul class="navbar">
-                <a class="nav-link" href="#"><li>Home</li></a>
-                <a class="nav-link" href="#"><li>Archive</li></a>
-                <a class="nav-link" href="#"><li>About</li></a>
-                <a class="nav-link" href="#"><li>Contact</li></a>
+            <ul class="navbar menu" id="menu">
+                <li><a class="nav-link" href="#">Home</a></li>
+                <li><a class="nav-link" href="#">Archive</a></li>
+                <li><a class="nav-link" href="#">About</a></li></a>
+                <li><a class="nav-link" href="#">Contact</a></li>
+                <a class="close" href="#">
+                    <span class="material-icons">
+                        close
+                    </span>
+                </a>
             </ul>
+            <a class="hamburger" href="#menu">
+                <span class="material-icons">
+                    menu
+                </span>
+            </a>
         </nav>
         <img src="assets/images/logo.png" alt="Style Slate Logo" class="logo" height="250" width="250">
     </header>
 
     <main role="main">
         <div class="card">
-            <img src="assets/images/post1.jpg" alt="Fashion Blog Post" width="500" height="350" class="post-img-left">
+            <img src="assets/images/post1.jpg" alt="Fashion Blog Post" width="500" height="350" class="post-img post-img-left">
             <div class="post-desc">
                 <h2 class="post-title">Lorem ipsum</h2>
                 <p>Lorem ipsum dolor sit amet, <q>consectetur adipiscing elit</q>, sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -48,10 +59,10 @@
                         <a href="post.html" class="post-link">Learn more</a>
                     </div>
             </div>
-            <img src="assets/images/post2.jpg" alt="Fashion Blog Post" width="500" height="350" class="post-img-right">
+            <img src="assets/images/post2.jpg" alt="Fashion Blog Post" width="500" height="350" class="post-img post-img-right">
         </div>
         <div class="card">
-            <img src="assets/images/post3.jpg" alt="Fashion Blog Post" width="500" height="350" class="post-img-left">
+            <img src="assets/images/post3.jpg" alt="Fashion Blog Post" width="500" height="350" class="post-img post-img-left">
             <div class="post-desc">
                 <h2 class="post-title">Lorem ipsum</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore

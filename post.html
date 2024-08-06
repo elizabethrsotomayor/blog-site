@@ -5,25 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post Title</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header role="banner">
         <h1 aria-label="Blog Page"></h1>
         <nav class="navbar-container">
-            <ul class="navbar">
-                <a class="nav-link" href="index.html">
-                    <li>Home</li>
-                </a>
-                <a class="nav-link" href="#">
-                    <li>Archive</li>
-                </a>
-                <a class="nav-link" href="#">
-                    <li>About</li>
-                </a>
-                <a class="nav-link" href="#">
-                    <li>Contact</li>
+            <ul class="navbar menu" id="menu">
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="#">Archive</a></li>
+                <li><a class="nav-link" href="#">About</a></li></a>
+                <li><a class="nav-link" href="#">Contact</a></li>
+                <a class="close" href="#">
+                    <span class="material-icons">
+                        close
+                    </span>
                 </a>
             </ul>
+            <a class="hamburger" href="#menu">
+                <span class="material-icons">
+                    menu
+                </span>
+            </a>
         </nav>
         <img src="assets/images/logo.png" alt="Style Slate Logo" class="logo" height="250" width="250">
     </header>

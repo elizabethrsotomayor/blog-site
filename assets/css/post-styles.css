@@ -74,7 +74,7 @@
     height: 4rem;
 }
 
-@media screen and (min-width: 50rem) {
+@media screen and (min-width: 65rem) {
     .post-page-title {
         margin-top: 3rem;
     }

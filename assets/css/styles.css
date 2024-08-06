@@ -1,6 +1,6 @@
 @import "mobstyle.css" screen and (max-width: 25rem);
 @import "post-styles.css";
-@import "assets\css\tablet-styles.css" screen and (max-width: 51rem);
+@import "tablet-styles.css" screen and (max-width: 65rem);
 
 *,
 *::before,
@@ -100,7 +100,7 @@ main, .footer {
 /* DESKTOP STYLES */
 /*******************************************************/
 
-@media screen and (min-width: 50rem){
+@media screen and (min-width: 65rem){
 
         .hamburger, .close {
             display: none;

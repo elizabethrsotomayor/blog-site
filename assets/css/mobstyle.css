@@ -4,9 +4,9 @@
 * {
     max-width: 100%
 }
+
 .hamburger {
     position: fixed;
-    /* a large z-index puts the ham button above the rest of the page*/
     z-index: 99;
     background: white;
     border: none;
@@ -17,8 +17,6 @@
 
 .menu {
     position: fixed;
-    /* give the menu a larger z-index than the ham link
-  to put the menu above it */
     z-index: 100;
     top: 0;
     left: 0;
@@ -26,12 +24,10 @@
     bottom: 0;
     width: 100%;
     height: 100vh;
-    /* basic menu styling*/
     list-style: none;
-    background: black;
+    background: #698474;
     display: flex;
     flex-direction: column;
-    /* animate slide up/down */
     transform: translateY(-100%);
     transition: transform 0.2s ease;
 }
@@ -46,13 +42,16 @@
 }
 
 .menu:target {
-    /* show menu */
     transform: translateY(0);
 }
 
 .logo {
     height: 8rem;
     width: 8rem;
+}
+
+.nav-link {
+    color: #FCF8F3;
 }
 
 main {
@@ -89,9 +88,13 @@ main {
 /****************************************************/
 .post-page-title {
     text-align: center;
+    margin-top: 1rem;
 }
+
 .content-container {
     padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .author-img {
@@ -99,5 +102,16 @@ main {
 }
 
 .author-attribution {
+    justify-content: center;
+}
+
+.about-container {
+    flex-direction: column;
+}
+
+.share-heading {
+    text-align: center;
+}
+.socials {
     justify-content: center;
 }
